@@ -1,0 +1,18 @@
+[{
+
+		"userName": "joey101",
+		"profileImage": "joey",
+		"bio": "Named after a kangaroo"
+	},
+	{
+
+		"userName": "mindiola",
+		"profileImage": "micky",
+		"bio": "Ask me anything"
+	},
+	{
+		"userName": "averageStudent",
+		"profileImage": "student",
+		"bio": "Not that smart"
+	}
+]
