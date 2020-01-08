@@ -13,8 +13,10 @@
 		0CAB768C23C5827E0013BCEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB768B23C5827E0013BCEB /* Assets.xcassets */; };
 		0CAB768F23C5827E0013BCEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB768E23C5827E0013BCEB /* Preview Assets.xcassets */; };
 		0CAB769223C5827E0013BCEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB769023C5827E0013BCEB /* LaunchScreen.storyboard */; };
-		0CAB769A23C583BB0013BCEB /* profiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB769923C583BB0013BCEB /* profiles.json */; };
 		0CAB769D23C584200013BCEB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAB769C23C584200013BCEB /* Data.swift */; };
+		0CAB769F23C644AC0013BCEB /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAB769E23C644AC0013BCEB /* Profile.swift */; };
+		0CAB76A123C646D40013BCEB /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAB76A023C646D40013BCEB /* ProfileSummary.swift */; };
+		0CAB76A323C649200013BCEB /* profiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB76A223C649200013BCEB /* profiles.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		0CAB768E23C5827E0013BCEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0CAB769123C5827E0013BCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CAB769323C5827E0013BCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CAB769923C583BB0013BCEB /* profiles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = profiles.json; path = "Sympl/New Group/profiles.json"; sourceTree = SOURCE_ROOT; };
 		0CAB769C23C584200013BCEB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		0CAB769E23C644AC0013BCEB /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		0CAB76A023C646D40013BCEB /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		0CAB76A223C649200013BCEB /* profiles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profiles.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 		0CAB768423C5827B0013BCEB /* Sympl */ = {
 			isa = PBXGroup;
 			children = (
+				0CAB769C23C584200013BCEB /* Data.swift */,
+				0CAB76A223C649200013BCEB /* profiles.json */,
 				0CAB768523C5827B0013BCEB /* AppDelegate.swift */,
 				0CAB768723C5827B0013BCEB /* SceneDelegate.swift */,
 				0CAB768923C5827B0013BCEB /* ContentView.swift */,
@@ -68,6 +74,8 @@
 				0CAB769023C5827E0013BCEB /* LaunchScreen.storyboard */,
 				0CAB769323C5827E0013BCEB /* Info.plist */,
 				0CAB768D23C5827E0013BCEB /* Preview Content */,
+				0CAB769E23C644AC0013BCEB /* Profile.swift */,
+				0CAB76A023C646D40013BCEB /* ProfileSummary.swift */,
 			);
 			path = Sympl;
 			sourceTree = "<group>";
@@ -83,8 +91,6 @@
 		0CAB769B23C583D30013BCEB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0CAB769923C583BB0013BCEB /* profiles.json */,
-				0CAB769C23C584200013BCEB /* Data.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CAB769223C5827E0013BCEB /* LaunchScreen.storyboard in Resources */,
-				0CAB769A23C583BB0013BCEB /* profiles.json in Resources */,
+				0CAB76A323C649200013BCEB /* profiles.json in Resources */,
 				0CAB768F23C5827E0013BCEB /* Preview Assets.xcassets in Resources */,
 				0CAB768C23C5827E0013BCEB /* Assets.xcassets in Resources */,
 			);
@@ -162,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CAB768623C5827B0013BCEB /* AppDelegate.swift in Sources */,
+				0CAB769F23C644AC0013BCEB /* Profile.swift in Sources */,
+				0CAB76A123C646D40013BCEB /* ProfileSummary.swift in Sources */,
 				0CAB768823C5827B0013BCEB /* SceneDelegate.swift in Sources */,
 				0CAB768A23C5827B0013BCEB /* ContentView.swift in Sources */,
 				0CAB769D23C584200013BCEB /* Data.swift in Sources */,
