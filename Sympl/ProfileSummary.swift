@@ -72,18 +72,33 @@ struct ProfileSummary: View {
         
         Spacer()
         
-            VStack(alignment: .leading){
-            Text("Questions")
-                 .padding(.top)
-            Spacer()
-            Divider()
-                Text("Answers")
+            ZStack {
+                
+               
+                Divider()
+                    .foregroundColor(Color.black)
+                
+                VStack(alignment: .leading){
+                Text("Questions")
+                    .padding(.horizontal)
                     .padding(.top)
-            Spacer()
+                    
+                Spacer()
+                Divider()
+                Text("Answers")
+                   .padding(.horizontal)
+                    .padding(.top)
+                Spacer()
 
 
+                
+                }.frame(height: 375, alignment: .topLeading)              .background(Color("SymplYellow").opacity(0.75).accentColor(Color("Black")))
+                    .padding(.horizontal, 40)
+                
+               
+            }
             
-            }.frame(width: 400, height: 375, alignment: .topLeading)
+            
         }
 //        .scaledToFill()
         
