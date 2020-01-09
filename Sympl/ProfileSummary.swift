@@ -99,10 +99,10 @@ struct ProfileSummary: View {
             }
             
             
-        }
+        }.edgesIgnoringSafeArea(.bottom)
 //        .scaledToFill()
         
-    }
+    }  
 }
 
 struct ProfileSummary_Previews: PreviewProvider {
