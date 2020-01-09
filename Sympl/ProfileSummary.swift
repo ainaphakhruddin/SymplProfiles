@@ -14,10 +14,24 @@ struct ProfileSummary: View {
     var body: some View {
         VStack {
             
-            Text(profile.handle)
-            .font(.title)
+            EditButton().font(.callout)
+                .offset(x: 165, y: 20)
+                .padding(.top)
+                            
+                .edgesIgnoringSafeArea(.top)
+                .frame(width: 30, height: 10)
+
+            HStack(alignment: .center){
+                Text(profile.handle)
+                    .font(.title)
+                    .multilineTextAlignment(.leading)
+                    .frame(width: 100, alignment: .center)
+                   
+            }
             
+
             
+
             ZStack {
                 
                
@@ -46,6 +60,7 @@ struct ProfileSummary: View {
                 
                 VStack(alignment: .center){
                     Text(profile.bio)
+                        .font(.caption)
                 }.frame(width: 400, height: 100, alignment: .topLeading)
             .background(Color.white).edgesIgnoringSafeArea(.horizontal)
                 .padding(.all)
@@ -54,8 +69,6 @@ struct ProfileSummary: View {
                 
             }.frame(width: 500, height: 300)
                 .offset(y: 20)
-        
-
         
         Spacer()
         
@@ -70,8 +83,9 @@ struct ProfileSummary: View {
 
 
             
-        }.frame(width: 400, height: 375, alignment: .topLeading)
+            }.frame(width: 400, height: 375, alignment: .topLeading)
         }
+//        .scaledToFill()
         
     }
 }
