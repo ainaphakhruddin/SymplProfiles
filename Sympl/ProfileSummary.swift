@@ -14,12 +14,17 @@ struct ProfileSummary: View {
     var body: some View {
         VStack {
             
+            Text(profile.handle)
+                .font(.title)
+                
+            
             ZStack {
                 
                
+                
                 VStack(alignment: .center){
                     
-                    Text(profile.handle)
+                    
                     Spacer()
                     Image(profile.picture)
                         .resizable()
@@ -28,10 +33,16 @@ struct ProfileSummary: View {
                     
                     Spacer()
                     Text(profile.bio).font(.caption)
-                }.frame(height: 300, alignment: .leading)
+                }.frame(width: 500, height: 300, alignment: .center)
+                .background(Color("BackgroundGray")).edgesIgnoringSafeArea(.horizontal)
+                
+                VStack(alignment: .center){
+                    Text(profile.bio)
+                }.frame(width: 500, height: 100, alignment: .center)
+                .background(Color.white).edgesIgnoringSafeArea(.horizontal)
                 
             }.frame(width: 500, height: 300)
-        .background(Color("BackgroundGray")).edgesIgnoringSafeArea(.horizontal)
+        
 
                 
         
