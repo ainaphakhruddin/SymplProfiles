@@ -32,13 +32,13 @@ struct ProfileHost: View {
             }
             if self.mode?.wrappedValue == .inactive
             {
-            ProfileSummary(profile: draftProfile)
+                ProfileSummary(profile: draftProfile)
             }
             else
             {
                 ProfileEditor(profile: $draftProfile)
                 .onAppear
-                    {
+                {
                         self.draftProfile = self.userData.profile
                         
                 }

@@ -11,6 +11,9 @@ import Combine
 
 final class UserData: ObservableObject {
         @Published var profile = Profile.default
+    
+    //Questions & Answers cards linked
+    
 }
 
 

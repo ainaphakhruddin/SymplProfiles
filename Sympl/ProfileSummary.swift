@@ -28,9 +28,6 @@ struct ProfileSummary: View {
                     .frame(width: 100, alignment: .center)
                    
             }
-            
-
-            
 
             ZStack {
                 
@@ -85,6 +82,8 @@ struct ProfileSummary: View {
                     
                 Spacer()
                 Divider()
+                    .foregroundColor(Color.black)
+
                 Text("Answers")
                    .padding(.horizontal)
                     .padding(.top)
@@ -97,6 +96,7 @@ struct ProfileSummary: View {
                 
                
             }
+            
             
             
         }.edgesIgnoringSafeArea(.bottom)
