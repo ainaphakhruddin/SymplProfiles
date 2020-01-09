@@ -15,43 +15,62 @@ struct ProfileSummary: View {
         VStack {
             
             Text(profile.handle)
-                .font(.title)
-                
+            .font(.title)
+            
             
             ZStack {
                 
                
-                
+                VStack{
                 VStack(alignment: .center){
                     
                     
                     Spacer()
-                    Image(profile.picture)
-                        .resizable()
-                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                        .frame(width: 100, height: 100, alignment: .center)
+                        
+                    Divider()
                     
-                    Spacer()
-                    Text(profile.bio).font(.caption)
-                }.frame(width: 500, height: 300, alignment: .center)
-                .background(Color("BackgroundGray")).edgesIgnoringSafeArea(.horizontal)
+                    
+                }.frame(width: 500, height: 200, alignment: .center)
+            .background(Color("BackgroundGray")).edgesIgnoringSafeArea(.horizontal)
+                    .offset(y: 50.0)
+                    
+                Image(profile.picture)
+                .resizable()
+                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                .frame(width: 100, height: 100, alignment: .center)
+                    .offset(y: -22.5)
+                    .shadow(radius: 10)
+                    
+                    
+                Spacer()
                 
                 VStack(alignment: .center){
                     Text(profile.bio)
-                }.frame(width: 500, height: 100, alignment: .center)
-                .background(Color.white).edgesIgnoringSafeArea(.horizontal)
+                }.frame(width: 400, height: 100, alignment: .topLeading)
+            .background(Color.white).edgesIgnoringSafeArea(.horizontal)
+                .padding(.all)
+                
+                }
                 
             }.frame(width: 500, height: 300)
+                .offset(y: 20)
         
 
-                
-        
         
         Spacer()
         
-        VStack{
+            VStack(alignment: .leading){
             Text("Questions")
-        }
+                 .padding(.top)
+            Spacer()
+            Divider()
+                Text("Answers")
+                    .padding(.top)
+            Spacer()
+
+
+            
+        }.frame(width: 400, height: 375, alignment: .topLeading)
         }
         
     }
